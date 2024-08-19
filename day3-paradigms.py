@@ -16,7 +16,7 @@ print(flatten_and_sort([[19,67,0],[9,45,17],[92,55,2]]))
 # Make sure to answer the following questions about your coding process:
 
 # How does this solution ensure data immutability?
-# Data immutability is the idea that information within a database cannot be deleted or changed. In immutable—or append-only—databases, data can only ever be added. Meaning the database will not overwrite or change an item when new information is made available. So even if a mistake is made, it is corrected with a subsequent entry and not overwritten.
+# Data immutability is a concept where information that lives in a database cant be changed or deleted. In immutable—or append-only—databases data can only be added. In other words the database wont overwrite or change items when new info is available. Even if a there is a mistake its corrected with an entry thats used later and its not overwritten.
 
 # Is this solution a pure function? Why or why not?
 
@@ -33,11 +33,11 @@ print(flatten_and_sort([[19,67,0],[9,45,17],[92,55,2]]))
 
 # Would it have been easier to solve this problem using a different programming style?
 
-# The flatten_and_sort function is written in an imperative style, which is clear and easy to understand. However, other programming styles, such as functional programming, can offer more concise and expressive solutions.
+# The flatten_and_sort function is written in an imperative style so that it is clear and easy to understand. The other programming styles such as functional programming can offer more concise and expressive solutions.
 
 # Why in particular is functional programming a helpful paradigm when solving this problem?
 
-# Functional programming enhances the conciseness, expressiveness, and readability of the solution. It abstracts away low-level details, allowing you to focus on the high-level logic of the problem.
+# Functional programming enhances conciseness, expressiveness, and readability of a solution. It abstracts away low-level details allowing you to focus on the high-level logic of the problem.
 class TestArray:
     def flatten_and_sort(self, newArray):
         return sorted(i for item in newArray for i in item)
